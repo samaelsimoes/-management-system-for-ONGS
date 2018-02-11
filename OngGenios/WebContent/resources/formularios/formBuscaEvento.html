@@ -1,0 +1,94 @@
+<body>
+<div class = "box">
+    <div id = "menu2" class = "div"></div>
+</div>        
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right thumb">
+                <br> <br><br> 
+                <h3>
+                <a> Cadastro de Eventos:</a></h3>
+            </div>
+          
+            <form  id="formulario" class="thumb">
+                <br><br><br><br>
+                <div>
+                    <label for="txtEndereco">Endereço:</label>
+                    <input type="text" class="form-control thumb" id="txtEndereco" name="txtEndereco" />
+                    <p class="help-block text-danger"></p>
+                </div>
+              
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right thumb">
+                   <h3>
+                   <a><legend>Google Maps</legend> </a></h3>
+                </div>
+
+            
+                <div class="form-group col-xs-12 floating-label-form-group controls thumb">
+
+                    <div id="mapa" style="height: 500px; width: 779px"></div>
+                </div>
+
+                <div class="thumb">
+                
+                    <input type="hidden" id="txtLatitude" name="txtLatitude" />
+                    <input type="hidden" id="txtLongitude" name="txtLongitude" />
+                </div>
+                
+                <div class="form-group col-xs-12 floating-label-form-group controls thumb">
+                    <br> <br><br>
+
+                    Nome do Evento: <br>
+                    <input type="txtnome" class="form-control thumb" placeholder="Nome: " id="txtnome" >
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group col-xs-12 floating-label-form-group controls thumb">
+                    <br>
+
+                    Telefone para Contato: <br>
+                    <input type="txtnome" class="form-control thumb" placeholder="Contato: " id="txtcontato" >
+                    <p class="help-block text-danger"></p><br> <br> 
+                </div>
+                <br><br>
+                <div clas="form-group col-xs-12 floating-label-form-group controls thumb">
+                    <br> <br> <br> <br> 
+
+                    Data do evento:<br> <br>
+                    <input type="date" class="form-control thumb" placeholder="00/00/0000" id="data">
+                    <p class="help-block text-danger thumb"></p>
+                </div>
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <br>
+
+                    Informe o Horario de inicio do evento: <br><br>
+                    <input type = "time" name = "Horario" class = "form-control thumb" placeholder = "Horario De inicio:" id = "horario">
+                    <p class="help-block text-danger"></p>
+                </div>
+                <br>
+                <div class="form-group col-xs-12 floating-label-form-group controls thumb">
+
+                    Responsavel: <br>
+                    <input type = "txtnomeResponsavel" id = "nome" readonly = "true">
+                    <input type = "hidden" name="id" id="id">  
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="row control-group thumb">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <br>
+
+                        Sobre Evento: <br>
+                        <textarea rows="5" class="form-control" placeholder="Mensagem" id="mensagem" required data-validation-required-message="Campo obrigatório preencher falar sobre o Evento."></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <hr>
+            </form>
+        </div>
+    </div>
+</div>  
+    
+<script type = "text/javascript" src = "googleMaps/mapa.js"></script> 
+   
+    
+

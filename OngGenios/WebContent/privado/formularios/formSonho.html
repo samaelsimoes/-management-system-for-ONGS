@@ -1,0 +1,79 @@
+
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+                <p class="help-block text-danger">Editar Sonhos:</p>
+            </div>
+            
+			<input type="hidden" id="id">
+			
+            <br> <br>
+            <br> <br>
+
+            <form  id="formulario">
+
+            <div class="form-group">
+
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+
+                    <br>
+
+                    <p class="help-block text-danger">Beneficiario: </p>
+
+                    <select class="form-control" name="txtbeneficiario" id="beneficiario"></select>
+                    
+                    <p class="help-block text-danger"></p>
+                </div>
+                
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        
+                        <p class="help-block text-danger">Sonho: </p> 
+                        <input type="text" id="sonho" class="form-control" placeholder="Sonho Beneficiario: "/>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+
+                        <p class="help-block text-danger">Prioridade: </p>
+                        <select class="form-control" name="txtprioridade" id="nomeprioridade">   <br>
+                    </div>
+                </div>   
+
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls"><br><br>
+                        <fieldset disable>
+
+                            <p class="help-block text-danger"> Responsavel: </p>
+                            <input type="text" id="membro" class="form-control" placeholder="Responsavel: " readonly = "true"/>
+                        </fieldset>
+                    </div>
+                </div>   
+       
+                <div class="row">
+
+                    <div class="form-group col-xs-12">
+                        <br>
+
+                        <button type='button' class='btn btn-pencil' onclick = "ONG.contato.editarSonho()">OK</button>
+                        <button  class="btn btn-link" >Cancelar</button>
+                    </div>
+                </div>  
+                <br> <br>
+             </form>  
+             
+             <div id="msg" style="display:nome" ></div>                  
+        </div>
+    </div>
+</div>
+    
+   

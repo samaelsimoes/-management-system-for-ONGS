@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>	
+	
+	<head>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<script type="text/javascript" src="jquery-ui.min.js"></script>
+		<script type="text/javascript" src="mapa.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDv75b4syUIktftmJc4dM_2_fy7DRAVuoU&callback=initMap"></script>
+
+	</head>
+
+	<body>
+		<form method="post" action="" id="">   
+		    <fieldset>
+		        <legend>Google Maps</legend>   
+		 
+		        <div>
+		            <label for="txtEndereco">Endereço:</label>
+		            <input type="text" id="txtEndereco" name="txtEndereco" />
+		        </div>
+
+		        <br><br><br><br>
+		        <div>
+		            <input type="button" id="btnEndereco" name="btnEndereco" value="Mostrar no mapa" />
+		        </div>
+		 
+		        <div id="mapa" style="height: 500px; width: 500px">
+		        </div>
+		 
+		        <div>
+		            <input type="submit" value="Enviar" name="btnEnviar" onclick="initialize()"/>
+		        </div>
+		 
+		        <input type="" id="txtLatitude" name="txtLatitude" />
+		        <input type="" id="txtLongitude" name="txtLongitude" />
+		    </fieldset>
+		</form>
+	</body>	
+</html>

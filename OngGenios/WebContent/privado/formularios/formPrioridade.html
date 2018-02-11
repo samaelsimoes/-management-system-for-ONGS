@@ -1,0 +1,45 @@
+ <div class="container">
+    <div class="row">
+
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+                Editar Prioridade:
+            </div>
+            
+			<input type="hidden" id="id">
+
+            <br> <br>
+            <br> <br>
+
+            <form  id="formulario">
+
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+
+
+                        Prioridade: <br>
+                        <input type = "text" id="prioridade" class = "form-control" placeholder="Prioridade: "/>
+                    </div>
+                </div>     
+                
+                <div class="row">
+
+                    <div class="form-group col-xs-12">
+                        <br>
+
+                        <button type='button' class='btn btn-pencil' onclick = "ONG.gerenciar.salvarPrioridade()">Editar</button>
+                        <button class="btn btn-link">Cancelar</button>
+                    </div>
+                </div>  
+                <br> <br>
+             </form>  
+             
+             <div id = "msg" style = "display:nome" ></div>                  
+        </div>
+    </div>
+</div>
+    
+   

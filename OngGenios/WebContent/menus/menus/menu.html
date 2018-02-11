@@ -1,0 +1,91 @@
+
+
+<form id = "formularioLogin">
+	  <input type = "hidden" name = "acao" value = "logout"></input>
+</form>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class=" navbar-header page-scroll">
+        
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            
+                <span class = "sr-only">Toggle navigation</span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+            </button>
+            <a class = "navbar-brand page-scroll" href = "#page-top">Ong Projeto Genios</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div > 
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+               
+                    <li>
+
+                        <div class="btn-group">
+
+                            <a  href = "/OngGenios/privado/paginausuario.html" class = "btn btn-default dropdown-toggle" aria-haspopup = "true" aria-expanded = "false" style = "border-radius: 10px 10px" >home </a>
+                        </div>
+                    </li>
+               
+                    <li>
+                        <div class="teste">
+
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 10px 10px"> Cadastrar</button>
+
+                            <ul class="dropdown-menu">
+                        
+                                <li><a href = "/OngGenios/privado/usuario/cadastroMembros.html">Membro</a></li>
+                                <li><a href = "/OngGenios/privado/usuario/cadastroBeneficiarios.html" >Beneficiarios</a></li>
+                                <li><a href = "/OngGenios/privado/usuario/cadastroSonhos.html">Sonhos</a></li>
+                                <li><a href = "/OngGenios/privado/usuario/cadastroEventos.html">Eventos</a></li>
+                                <li><a href = "/OngGenios/privado/usuario/cadastroPrioridade.html">Prioridade</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                
+                                <li><a href = "/OngGenios/privado/usuario/cadastroGaleriaEventos.html">Galeria de Eventos</a></li>
+								<li><a href = "/OngGenios/privado/usuario/cadastroImagensGaleria.html">Imagens na Galeria</a></li>                                                   
+                                <li><a href = "/OngGenios/privado/usuario/cadastroDoacao.html">Doações</a></li>
+                                <li><a href = "/OngGenios/privado/usuario/cadastroCategoria.html">Categoria</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="teste2">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 10px 10px"> Gerenciar</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/OngGenios/privado/visuUsuario.html">Membros e Beneficiarios</a></li>
+                                <li><a href="/OngGenios/privado/visuSonho.html">Sonhos</a></li>                                
+                                <li><a href="/OngGenios/privado/visuDoacao.html"> Doações</a>
+                                <li role="separator" class="divider">Galeria de Eventos</li>   
+                                <li><a href="/OngGenios/privado/visuEventos.html"> Eventos</a>
+                                <li><a href="/OngGenios/privado/visuGaleriaEvento.html"> Galeria Eventos</a>
+                                <li><a href="/OngGenios/privado/visuImagemGaleria.html">Image Eventos</a></li>
+                                <li><a href="/OngGenios/privado/visuPrioridade.html">Prioridade</a></li>
+                                <li><a href="/OngGenios/privado/visuCategoria.html">Categoria</a></li>
+                           </ul>
+                        <div>
+                    </li>
+                    <li>
+                        <div class="btn-group">
+                            <a  href = "/OngGenios/privado/financeiro.html" class = "btn btn-default dropdown-toggle" aria-haspopup = "true" aria-expanded = "false" style = "border-radius: 10px 10px" >Financeiro </a>
+                        </div>
+                    </li>                    
+                    <li>
+                          <div class="btn-group">
+                                                
+                            <input style="border-radius: 10px 10px" type="submit" class="btn btn-default" value="Sair" onclick="ONG.sessao.sair()"> 
+                          </div>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

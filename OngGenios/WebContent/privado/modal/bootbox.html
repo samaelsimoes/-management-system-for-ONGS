@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My page</title>
+
+    <!-- CSS dependencies -->
+    <link href = "../privado/css/bootstrap.css" rel="stylesheet">
+    <link href = "../privado/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <p>Content here. <a class="alert" href=#>Alert!</a></p>
+
+    <!-- JS dependencies -->
+
+    <script type="text/javascript" src = "../privado/js/jquery.min.js"></script>
+
+    <!-- bootbox code -->
+        <script type = "text/javascript" src = "../privado/js/bootbox.min.js"></script> 
+
+
+    <script>
+        $(document).on("click", ".alert", function(e) {
+            bootbox.confirm({
+    message: "This is a confirm with custom button text and color! Do you like it?",
+    buttons: {
+        confirm: {
+            label: 'Yes',
+            className: 'btn-success'
+        },
+        cancel: {
+            label: 'No',
+            className: 'btn-danger'
+        }
+    },
+    callback: function (result) {
+        console.log('This was logged in the callback: ' + result);
+    }
+});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        
+        <title>ONG </title>
+
+        <link href = "../privado/css/bootstrap.css" rel="stylesheet">
+        <link href = "../privado/css/clean-blog.min.css" rel="stylesheet">
+        <link href = "../privado/css/css.css" rel="stylesheet" type="text/css">
+        <link href = '../privado/css/glopeas.css' rel='stylesheet' type='text/css'> 
+    </head>
+    <body>
+        <!-- Menuu -->
+        <div class = "box">
+
+            <div id = "menu" class = "div"></div>
+        </div>
+
+        <!-- Fim menu -->
+
+        <br> <br>
+
+        <div class = "col-lg-10 col-lg-offset-1 text-center thump">
+            <div class = "header">
+                <div class = "panel-body">
+                    <div class = "row">
+                        <div class = "table-responsive">
+                            <div class = "col-lg-10 col-lg-offset-1 text-center thump">
+                                    
+                                <h1>Financeiro</h1>
+
+                                <div class="col-lg-10 col-lg-offset-1 text-center thump">
+
+                                    <select class="form-control" name="categoria" id="categoria"> 
+
+                                        <option value="0">Escolha uma das opções</option>
+                                        <option value="1">Deposito</option>
+                                        <option value="2">Saque</option>
+                                    </select>
+                                </div>
+                             
+                                <div class="thump">
+
+                                    <button data-toggle="modal" data-target="#modalDeposito" type="button" class="btn btn-default" style="border-radius: 10px 10px" ><a> <a href ="modal/deposito.html">Deposito</a></a></button>
+
+                                    <button data-toggle="modal" data-target="#modalSaque" type="button" class="btn btn-default" style="border-radius: 10px 10px">
+                                    <a><a href ="modal/saque.html">Saque</a></a></button>
+
+                                    <button type="button" class="btn btn-default" style="border-radius: 10px 10px"><a><a onclick = "ONG.financeiro.buscar()">Buscar Relatório</a></a></button>
+                                </div>   
+                                <br>
+                                                 
+                            </div>
+                            <br>
+                            <table class="table table-bordered table-hover table-striped thump">
+                                <thead>
+
+                                    <div id = "form"></div>
+                                    <div id = "resultadoFinanceiro" class = "divResultado"></div>
+                                </thead>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type = "text/javascript" src = "js/jquery.js"></script>
+    <script type = "text/javascript" src = "js/jquery-ui.min.js"></script>   
+    <script type = "text/javascript" src = "js/bootstrap.min.js"></script>  
+    <script type = "text/javascript" src = "js/ajax.js"></script>
+    <script type = "text/javascript" src = "../privado/js/chamamenu.js"></script>
+    <script type = "text/javascript" src = "js/bootbox.min.js"></script>
+    <script type = "text/javascript" src = "js/Buscafinanceiro.js"></script>
+    <script type = "text/javascript" src = "../privado/js/sair.js"></script>
+</html>

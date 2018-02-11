@@ -1,0 +1,49 @@
+ <div class="container">
+    <div class="row">
+
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+               <p class="help-block text-danger"> Editar Beneficiario:</p>
+            </div>
+			<input type="hidden" id="id">
+            <br> <br>
+            <br> <br>
+            <form  id="formulario">
+                <div class="form-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <br>
+                        <p class="help-block text-danger">Saque: </p>
+                     
+                        <input type = "text" id="saque" class = "form-control" placeholder = "saque: "/>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <br>
+                        <p class="help-block text-danger">Informe o Motivo que está editando:</p>
+                       
+                        <input type="text" id="motivo" class="form-control" placeholder="motivo: "/>
+                       
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="form-group col-xs-12">
+                        <br>
+
+                        <button type='button' class='btn btn-pencil' onclick = "ONG.financeiro.editar()">OK</button>
+                        <button  class="btn btn-link" >Cancelar</button>
+                    </div>
+                </div>  
+                <br> <br>
+             </form>  
+             
+             <div id = "msg" style = "display:nome" ></div>                  
+        </div>
+    </div>
+</div>
+    
+   

@@ -1,0 +1,11 @@
+node_modules
+*.log
+.metadata
+.recommenders
+RemoteSystemsTempfiles
+.classpath
+.project
+.settings
+META-INF
+WEB-INF
+Servers

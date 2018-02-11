@@ -1,0 +1,64 @@
+ <div class="container">
+    <div class="row">
+
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+                <h3> <a> Editar Doação:
+            </div>
+			<input type="hidden" id="id">
+
+            <br> <br>
+            <br> <br>
+
+            <form  id="formulario">
+
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        
+                        Doação <br>
+                            <input type = "text" id = "doacao" class = "form-control" placeholder = "Doacao: "/>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        
+                        Categoria de Doações: <br> <br>
+                        <select class="form-control" name="categoria2" id="categoria2"></select>              
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+
+                        <br>
+                        Quantidade<br>
+                        <input type = "text" id="quantidade" class = "form-control" placeholder = "Quantidade: "/>
+                    </div>
+                </div>      
+                
+                <div class="row">
+
+                    <div class="form-group col-xs-12">
+                        <br>
+
+                        <button type='button' class='btn btn-pencil' onclick = "ONG.contato.editarDoacao()">OK</button>
+                        <button  class="btn btn-link">Cancelar</button>
+                    </div>
+                </div>  
+                <br> <br>
+             </form> 
+
+             <div id = "msg" style = "display:nome" ></div>                     
+        </div>
+    </div>
+</div>
+    
+   

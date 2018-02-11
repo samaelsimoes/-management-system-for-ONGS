@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+
+        <title>ONG Projeto Gênios</title>
+
+        <link href = "../../privado/css/bootstrap.css" rel="stylesheet">
+        <link href = "../../privado/css/clean-blog.min.css" rel="stylesheet">
+        <link href = "../../privado/css/css.css" rel="stylesheet" type="text/css">
+        <link href = '../../privado/css/glopeas.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class = "box">	
+		<div id = "menu2" class = "div"></div>
+	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+                    <h3> <a> Cadastro de Membros:
+                </div>
+            <br> <br>
+            <br> <br>
+                <form  id="cadastroMembros" class="form">
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            Nome: <br>
+                            <input type = "txtnome" class="form-control" placeholder = "Nome: " id = "nome" >
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Sobrenome: <br>
+                            <input type="txtsobrenome" class="form-control" placeholder="sobrenome: " id="sobrenome" >
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Email:<br>
+                            <input type="txtemail" class="form-control" placeholder="sonia-azambuja@hotmail.com" id="email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Telefone Residencial: <br>
+                            <input type="txttel1" class="form-control" id="telefone1" maxlength="13">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Telefone Celular:<br>
+                            <input type = "txttel2" class = "form-control" id="telefone2" maxlength="13">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Endereço:<br>
+                            <input type="txtendereco" class="form-control" placeholder="Rua feijao, bairro centro, 105 ap 45" id="endereco">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Data Nascimento:<br>
+                            <input type="date" class="form-control" placeholder="00/00/0000" id="dataNasc">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>                    
+					 <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Cep: <br>
+                            <input type = "txtcep" class = "form-control" id="cep" maxlength="10">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Login:<br>
+                            <input type="txtlogin" class="form-control" placeholder="OBS: Ira virar ' .OngGenios  ' automaticamente" id="login">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <br>
+                                Senha:<br>
+                                <input type="password" class="form-control" placeholder="abc123" id="senha">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <br>
+                                Confirma Senha:<br>
+                                <input type="password" class="form-control" placeholder="abc123" id="confsenha">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                    	<div class="form-group col-xs-12 floating-label-form-group controls">
+                    		<br>
+                    		Permissão de acesso
+                    		<select class = "form-control" name = "prioridade" id = "permissao">  
+								<option  value = "master"> Master </option>
+			                    <option  value = "administrador"> Administrador </option>
+			                    <option  value = "comum"> Comum </option>
+			                </select>
+                    	</div>
+                    </div>
+                    </div>
+                    	<div class="row">
+	                        <div class="div-form div-form-button">
+	                            <br>
+									<div class="form-group col-xs-12"></div>
+	                            	<input type = "button"  value = "Cadastrar" onclick = "ONG.contato.cadastrar()"/></input>
+	                          </div>
+                        </div>
+                    </div>
+                </form>
+                <div id="msg" style= "display:nome" ></div>  
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script type = "text/javascript" src="../../privado/js/jquery.js"></script>
+    <script type = "text/javascript" src="../../privado/js/jquery-ui.min.js"></script>   
+    <script type = "text/javascript" src="../../privado/js/bootstrap.min.js"></script>  
+    <script type = "text/javascript" src="../../privado/js/ajax.js"></script>
+    <script type = "text/javascript" src="../../privado/js/cadastroMembros.js"></script>          
+    <script type = "text/javascript" src = "../../privado/js/chamamenu.js"></script>
+    <script type = "text/javascript" src = "../../privado/js/bootbox.min.js"></script>
+    <script type = "text/javascript" src = "../../privado/js/sair.js"></script>
+</html>

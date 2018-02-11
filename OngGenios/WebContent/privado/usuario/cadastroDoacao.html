@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>ONG Projeto Gênios</title>
+        
+        <link href = "../../privado/css/bootstrap.css" rel = "stylesheet">
+        <link href = "../../privado/css/clean-blog.min.css" rel = "stylesheet">
+        <link href = "../../privado/css/css.css" rel = "stylesheet" type="text/css">
+        <link href = '../../privado/css/glopeas.css' rel = 'stylesheet' type = 'text/css'>
+    </head>
+    <body>
+    <div class = "box">	
+	
+		<div id = "menu2" class = "div"></div>
+	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+                    <h3> <a> Cadastro de Doações:
+                </div>
+                <br> <br>
+                <br> <br>
+                <form  id="formulario">
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            Informe item Doado: <br>
+                            <input type = "txtdoado" class = "form-control" placeholder = "Doação recebida: " id = "doacao" >
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            Informe a quantidade: <br>
+                            <input type = "txtquantidade" class = "form-control" placeholder = "Quantidade da Doação: " id = "quantidade" >
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+                            Categoria de Doações: <br>
+                            <select class="form-control" name="categoria" id="categoria">                                                
+                            </select>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <fieldset disable>
+	                           Responsavel pela Doação: <br>
+	
+	                            <input type = "txtnomeResponsavel" id = "nome" readonly = "true">
+	                       		<input type = "hidden" name="id" id="id">     
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <br>
+                            <button type = "button"  value = "Cadastrar Membros" onclick = "ONG.contato.cadastroDoacao()">Cadastrar</button>
+                        </div>
+                    </div>  
+                    <br> <br>
+                 </form>                   
+            </div>
+        </div>
+    </div>		
+    <div id = "msg" style = "display:nome" ></div> 
+    <br> <br>
+</body>
+
+    <script type = "text/javascript" src = "../../privado/js/jquery.js"></script>
+    <script type = "text/javascript" src = "../../privado/js/jquery-ui.min.js"></script>   
+    <script type = "text/javascript" src = "../../privado/js/bootstrap.min.js"></script> 
+    <script type = "text/javascript" src = "../../privado/js/ajax.js"></script>
+    <script type="text/javascript" src = "../../privado/js/chamamenu.js"></script>
+    <script type = "text/javascript" src = "../../privado/js/cadastroDoacao.js"></script>   
+    <script type="text/javascript" src = "../../privado/js/bootbox.min.js"></script>
+    <script type = "text/javascript" src = "../../privado/js/sair.js"></script>
+
+   <script type = "text/javascript">
+        window.onload = function(){
+            
+            ONG.contato.buscarMembroCategoria();
+        }
+    </script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Samael Pereira Simões">
+
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/clean-blog.min.css" rel="stylesheet">
+        <link href="../css/css.css" rel="stylesheet" type="text/css">
+        <link href='../css/glopeas.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="box">
+            <div id="menu2" class="div"></div>
+        </div>        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+                        <br> <br><br> 
+                        <h3>
+                        <a> Cadastro de Eventos:</a></h3>
+                    </div>
+                    <br> <br>
+                    <br> <br>
+                    <form  id="formulario">
+                        <br><br><br><br>
+                        <div>
+                            <label for="txtEndereco">Endereço:</label>
+                            <input type="text" class="form-control" id="txtEndereco" name="txtEndereco" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <br><br>
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+                           <h3>
+                           <a><legend>Google Maps</legend> </a></h3>
+                        </div>
+
+                        <br><br>
+                        <br><br>
+
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div id="mapa" style="height: 500px; width: 779px"></div>
+                        </div>
+
+                        <div>
+                            <input type="hidden" id="txtLatitude" name="txtLatitude" />
+                            <input type="hidden" id="txtLongitude" name="txtLongitude" />
+                        </div>
+                        
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br> <br><br>
+
+                            <p class="help-block text-danger"> Nome do Evento:  </p>
+                            <input type="txtnome" class="form-control" placeholder="Nome: " id="txtnome" >
+                           
+                        </div>
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+
+                            <p class="help-block text-danger">Telefone para Contato: </p>
+                            <input type="txtnome" class="form-control" placeholder="Contato: " id="txtcontato" maxlength="13">
+                            <p class="help-block text-danger"></p><br> <br> 
+                        </div>
+                        <br><br>
+                        <div clas="form-group col-xs-12 floating-label-form-group controls">
+                            <br> <br> <br> <br> 
+
+                            <p class="help-block text-danger">Data do evento:</p>
+                            <input type="date" class="form-control" placeholder="00/00/0000" id="data">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <br>
+
+                            <p class="help-block text-danger">Informe o Horario de inicio do evento: </p>
+                            <input type="time" name="Horario" class="form-control" placeholder="Horario De inicio:" id="horario">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <br>
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+
+                            <p class="help-block text-danger">Responsavel:</p>
+                            <input type="txtnomeResponsavel" id="nome" readonly="true">
+                            <input type="hidden" name="id" id="id">  
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <br>
+
+                                <p class="help-block text-danger">Sobre Evento:</p>
+                                <textarea rows="5" class="form-control" placeholder="Mensagem" id="mensagem" required data-validation-required-message="Campo obrigatório preencher falar sobre o Evento."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+
+                                <button type="button" class="btn btn-default" onclick="ONG.eventos.chamaDados()" style="border-radius:15px 15px">Cadastrar</button>
+                            </div>
+                        </div>
+                        <hr>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </body>
+    
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="../js/ajax.js"></script>
+    <script type="text/javascript" src="../js/cadastroEventos.js"></script> 
+    <script type="text/javascript" src="../js/chamamenu.js"></script> 
+
+    <script type="text/javascript" src="../googleMaps/jquery-ui.js"></script> 
+    <script type="text/javascript" src="../googleMaps/jquery-ui.min.js"></script> 
+    <script type="text/javascript" src="../googleMaps/mapa.js"></script> 
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDv75b4syUIktftmJc4dM_2_fy7DRAVuoU&callback"></script>
+    <script type="text/javascript" src="../../privado/js/sair.js"></script>
+    <script type="text/javascript" src="../../privado/js/bootbox.min.js"></script>
+    <script>
+	    window.onload = function(){
+	    	ONG.eventos.buscaMembro();
+	    }
+    </script>
+</html>

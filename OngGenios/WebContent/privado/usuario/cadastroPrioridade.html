@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <meta name = "description" content="">
+        <meta name = "author" content = "">
+
+        <title>ONG Projeto Gênios</title>
+
+        <link href = "../../privado/css/bootstrap.css" rel = "stylesheet">
+        <link href = "../../privado/css/clean-blog.min.css" rel = "stylesheet">
+        <link href = "../../privado/css/css.css" rel = "stylesheet" type="text/css">
+        <link href = '../../privado/css/glopeas.css' rel = 'stylesheet' type = 'text/css'>
+     
+    </head>
+    <body>
+
+    <!-- Menuu -->
+    <div class = "box">	
+	
+		<div id = "menu2" class = "div"></div>
+	</div>
+    <!-- Fim menu -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+                    <h3> <a> Cadastro de Sonhos:
+                </div>
+
+                <br> <br>
+                <br> <br>
+
+                <form  id="formulario">
+                    <div class = "form-group">
+
+                        <div class = "form-group col-xs-12 floating-label-form-group controls">
+                           <fieldset disable>
+                           
+	                       <p class="help-block text-danger">Informe o novo tipo de prioridade: </p>
+	
+	                             <input type="text" class="form-control" placeholder="Exemplo prioridade: urgente " id="prioridade" >
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+
+                        <div class = "form-group col-xs-12 floating-label-form-group controls">
+                           <fieldset disable>
+                           
+                                <p class="help-block text-danger">Membro responsavel: </p>
+    
+                                <input type="text" id="nome" readonly="true">
+                                <input type="hidden" name="id" id="idmembro">     
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <br>
+
+                            <button type="button" class="btn btn-default" onclick="ONG.gerenciar.cadastrar()">Cadastrar</button>
+                        </div>
+                    </div>
+                    <hr>              
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script type = "text/javascript" src = "../js/jquery.js"></script>
+    <script type = "text/javascript" src = "../js/jquery-ui.min.js"></script> 
+    <script type = "text/javascript" src = "../js/bootstrap.min.js"></script>  
+    <script type = "text/javascript" src = "../js/ajax.js"></script>
+    <script type = "text/javascript" src = "../js/chamamenu.js"></script>        
+    <script type = "text/javascript" src = "../js/bootbox.min.js"></script>
+    <script type = "text/javascript" src = "../js/prioridade.js"></script>
+    <script type = "text/javascript" src = "../../privado/js/sair.js"></script>
+
+    <script type = "text/javascript">
+        
+        window.onload=function(){
+            
+            ONG.gerenciar.membro();
+            
+        }
+    </script>
+</html>

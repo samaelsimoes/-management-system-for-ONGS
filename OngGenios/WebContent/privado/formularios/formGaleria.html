@@ -1,0 +1,82 @@
+<style type="text/css">         
+    .custom-imagem2 img{
+        height: 400px!important;
+        width: 750px !important;
+    }
+</style>
+
+ <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 navbar-right">
+
+                <h3> <a> Editar Galeria:
+            </div>
+            <input type="hidden" id="id">
+
+            <br> <br>
+            <br> <br>
+
+            <form  id="formulario">
+                <div class="form-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        
+                        Nome da galeria <br>
+                        
+                        <input type = "text" id = "nome" class = "form-control" placeholder = "Nome Galeria: "/>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        
+                        Evento  <br> <br>
+
+                        <select class="form-control" name="eventos" id="eventos"></select>              
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls ">
+     
+                        <div id="result" class="custom-imagem2"></div>                 
+                    </div>
+                </div>   
+
+                <div class="form-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                    
+                        <input type="file" style="border-radius: 12px 12px" class = "form-control custom-imagem2" name="file" id="fileArquivo" class="multi">
+                    </div>
+                </div>
+
+                <div class = "form-group">
+
+                    <div class = "col-sm-10">
+
+                        <label class = "col-sm-2 control-label">Informação Galeria: </label><br> <br>
+
+                        <textarea id = "informacaoGaleria"  rows = "5" class = "form-control" placeholder = "Mensagem"  required data-validation-required-message = "Campo obrigatório preencher" ></textarea>
+                    </div>
+                </div>   
+                
+                <div class="row">
+
+                    <div class="form-group col-xs-12">
+                        <br>
+
+                        <button type='button' class='btn btn-pencil' onclick = "ONG.monta.editarGaleria()">OK</button>
+                        <button  class="btn btn-link">Cancelar</button>
+                    </div>
+                </div>  
+                <br> <br>
+             </form> 
+
+             <div id = "msg" style = "display:nome" ></div>                     
+        </div>
+    </div>
+</div>
+    
+   

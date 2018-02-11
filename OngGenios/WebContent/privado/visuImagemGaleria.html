@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ONG</title>
+		
+		<link href="../privado/BootstrapGaleriaImagem/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../privado/BootstrapGaleriaImagem/css/thumbnail-gallery.css" rel="stylesheet">
+      
+		<script type = "text/javascript">
+			window.onload = function(){
+				ONG.monta.buscaGaleria();
+			}
+		</script>
+		<style type="text/css">			
+			.custom-imagem{
+
+				height:200px !important;
+				width:300px !important;
+			}
+			.custom-imagem2{
+				height: 400px!important;
+				width: 750px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "box">	
+			<div id = "menu" class = "div"></div>
+		</div>
+		<div class="container">
+        	<div class="row">
+        		<div class="col-lg-12 thumb">
+			        <h1 class="page-header">Imagens da Galeria</h1>
+			    </div>
+				<div class ="col-lg-8 col-lg-offset-1 text-center thumb">
+			        <div class="form-comtrol">
+						<select class="form-control" name="galeria" id="galeria"></select> 
+					</div>
+				</div>  
+				<div class="col-lg-8 col-lg-offset-1 text-center thumb">
+					<input type = "button"  value = "Buscar" onclick = "ONG.monta.imagemDaGaleria()"/></input>
+				</div>	
+				<div class="col-lg-8 col-lg-offset-1 text-center thumb">
+					<div id="form"></div>
+					<div id="resultadoGaleria" class="divResultado"></div>	
+				</div>
+				<div id = "msg" style = "display:nome" ></div> 
+			</div>
+		</div>
+	</body>
+
+	<script type = "text/javascript" src = "../privado/BootstrapGaleriaImagem/js/jquery.js"></script>  
+	<script type = "text/javascript" src = "../privado/js/jquery-ui.min.js"></script>   
+	<script type = "text/javascript" src = "../privado/js/ajax.js"></script>
+	<script type = "text/javascript" src = "../privado/js/buscaImagemGaleriaEvento.js"></script>  
+	<script type = "text/javascript" src = "../privado/js/chamamenu.js"></script>
+	<script type = "text/javascript" src = "../privado/js/bootbox.min.js"></script>
+	<script type = "text/javascript" src = "../privado/BootstrapGaleriaImagem/js/bootstrap.min.js"></script>  
+	<script type="text/javascript" src="../privado/js/sair.js"></script>
+</html>
